@@ -54,7 +54,7 @@ const Conversation = () => {
       );
       form.reset();
     } catch (error: any) {
-      if (error?.response?.status === 403) {
+      if(error?.response?.status === 403) {
         proModal.onOpen();
       }
       console.log("error")
@@ -71,10 +71,10 @@ const Conversation = () => {
       // For example, insert line breaks after each full stop
       return content.replace(/\.\s/g, '.\n');
     }
-
+  
     // If content is null, return an empty string or handle it accordingly
     return '';
-  }
+  }  
 
 
   return <>
@@ -86,7 +86,7 @@ const Conversation = () => {
     />
 
     <div className="px-4 lg:px-8">
-      <div className="sticky top-16 z-50 bg-white ">
+  <div className="sticky top-16 z-50 bg-white ">
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="rounded-lg border border-violet-500/30 w-full p-4 px-3 md:px-6 focus-within:shadow-sm grid grid-cols-12 gap-2">
             <FormField name="prompt" render={({ field }) => (
@@ -101,7 +101,7 @@ const Conversation = () => {
         </Form>
       </div>
       <div className="space-y-4 mt-4">
-
+        
         {messages.length === 0 && !isLoading && (
           <Empty label="No conversation started yet" />
         )}

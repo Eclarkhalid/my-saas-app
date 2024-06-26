@@ -17,7 +17,7 @@ const instructionMessage: ChatCompletionMessage = {
 
 export async function POST(
   req: Request,
-): Promise<NextResponse>  {
+): Promise<NextResponse> {
   try {
     const { userId } = auth();
     const body = await req.json();
