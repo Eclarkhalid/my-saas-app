@@ -19,8 +19,8 @@ export const LandingNavbar = () => {
         <div className="relative h-8 w-16 mr-4">
           <Image fill alt="Logo" src="/images/egihub-orange-1.png" />
         </div>
-        <h1 className={cn("text-2xl font-bold text-white", font.className)}>
-          Egihub
+        <h1 className={cn("text-2xl font-bold", font.className)}>
+          ArtiFusion
         </h1>
       </Link>
       <div className="flex items-center gap-x-2">

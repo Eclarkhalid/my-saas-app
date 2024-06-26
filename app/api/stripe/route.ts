@@ -43,7 +43,7 @@ export async function GET() {
           price_data: {
             currency: "USD",
             product_data: {
-              name: "Egihub Pro",
+              name: "ArtiFusion Pro",
               description: "Unlimited AI Generations"
             },
             unit_amount: 2000,

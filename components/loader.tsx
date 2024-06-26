@@ -6,11 +6,11 @@ export const Loader = () => {
       <div className="w-20 h-10 relative animate-pulse">
         <Image alt="logo"
           fill
-          src={'/images/science.png'}
+          src={'/images/egihub-orange-1.png'}
         />
       </div>
       <p className="text-sm text-muted-foreground">
-        Egihub Is thinking ...
+        ArtiFusion Is thinking ...
       </p>
     </div>
   </>

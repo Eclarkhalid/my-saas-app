@@ -73,7 +73,7 @@ export const Promodal = () => {
         <DialogHeader>
           <DialogTitle className="flex justify-center items-center flex-col gap-y-4 pb-2">
             <div className="flex items-center gap-x-2 font-bold py-1">
-              Upgrade to Egihub
+              Upgrade to ArtiFusion
               <Badge variant={'premium'} className="uppercase text-sm py-1">
                 pro
               </Badge>

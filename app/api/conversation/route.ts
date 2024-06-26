@@ -12,7 +12,7 @@ const openai = new OpenAI({
 
 export async function POST(
   req: Request,
-) {
+): Promise<NextResponse>  {
   try {
     const { userId } = auth();
     const body = await req.json();
@@ -49,11 +49,6 @@ export async function POST(
     return NextResponse.json(response.choices[0].message);
   } catch (error) {
     console.log(error);
-    return {
-      status: 500,
-      body: {
-        error: "Something went wrong",
-      },
-    };
+    return NextResponse.json({ error: "Something went wrong" }, { status: 500 });
   }
 }
