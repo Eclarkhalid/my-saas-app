@@ -109,9 +109,9 @@ const CodeGeneration = () => {
         <div className="flex flex-col-reverse gap-y-4">
           {messages.slice().reverse().map((message) => (
             <div key={message.content}
-              className={cn("p-8 w-full flex items-start gap-x-8 rounded-lg", message.role === "user" ? "bg-white border border-black/10" : "bg-muted")}
+              className={cn("p-8 w-full flex items-start gap-x-8 rounded-lg", message.role === "assistant" ? "bg-white border border-black/10" : "bg-muted")}
             >
-              {message.role === "user" ? <UserAvatar /> : <BotAvatar />}
+              {message.role === "assistant" ? <UserAvatar /> : <BotAvatar />}
               <ReactMarkdown components={{
                 pre: ({ node, ...props }) => (
                   <div className="overflow-auto w-full my-2 p-2 bg-black/10 rounded-lg">
