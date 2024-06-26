@@ -11,7 +11,7 @@ const openai = new OpenAI({
 });
 
 const instructionMessage: ChatCompletionMessage = {
-  role: "system",
+  role: "assistant",
   content: "You are a code generator. You must answer only in markdown code format. Use code comments for explanations."
 }
 
