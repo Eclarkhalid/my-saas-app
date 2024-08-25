@@ -37,11 +37,11 @@ const CodeGeneration = () => {
   const router = useRouter();
   const proModal = useProModal();
 
-  const [messages, setMessages] = useState<ChatCompletionMessage[]>([])
+  const [messages, setMessages] = useState<ChatCompletionRequestMessage[]>([])
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
-      const userMessage: ChatCompletionMessage = {
+      const userMessage: ChatCompletionRequestMessage = {
         role: "assistant",
         content: values.prompt,
       };
